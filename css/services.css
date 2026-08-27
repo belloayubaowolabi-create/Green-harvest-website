@@ -1,0 +1,791 @@
+/* =================================
+   SERVICES HERO
+================================= */
+
+.services-hero {
+
+    background:
+        url("../images/farming.jpg")
+        center/cover no-repeat;
+
+}
+
+
+/* =================================
+   INTRO
+================================= */
+
+.services-intro {
+
+    padding-bottom: 45px;
+
+}
+
+
+/* =================================
+   MAIN SERVICES
+================================= */
+
+.main-services {
+
+    padding: 20px 0 100px;
+
+}
+
+
+.service-details-grid {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(2, 1fr);
+
+    gap: 30px;
+
+}
+
+
+.service-detail {
+
+    background: white;
+
+    border: 1px solid var(--border);
+
+    border-radius: 10px;
+
+    overflow: hidden;
+
+    transition: var(--transition);
+
+}
+
+
+.service-detail:hover {
+
+    transform: translateY(-8px);
+
+    box-shadow: var(--shadow);
+
+}
+
+
+.service-detail-image {
+
+    height: 270px;
+
+    position: relative;
+
+    overflow: hidden;
+
+}
+
+
+.service-detail-image img {
+
+    height: 100%;
+
+    object-fit: cover;
+
+    transition: .5s ease;
+
+}
+
+
+.service-detail:hover
+.service-detail-image img {
+
+    transform: scale(1.06);
+
+}
+
+
+.service-number {
+
+    position: absolute;
+
+    top: 18px;
+
+    right: 18px;
+
+    width: 45px;
+
+    height: 45px;
+
+    display: grid;
+
+    place-items: center;
+
+    background: var(--accent);
+
+    color: #222;
+
+    border-radius: 50%;
+
+    font-size: 12px;
+
+    font-weight: 800;
+
+}
+
+
+.service-detail-content {
+
+    padding: 30px;
+
+}
+
+
+.service-detail-icon {
+
+    width: 55px;
+
+    height: 55px;
+
+    display: grid;
+
+    place-items: center;
+
+    background: #eaf5ea;
+
+    color: var(--primary);
+
+    border-radius: 8px;
+
+    font-size: 23px;
+
+    margin-bottom: 18px;
+
+}
+
+
+.service-detail-content h3 {
+
+    color: var(--dark);
+
+    font-size: 23px;
+
+    margin-bottom: 10px;
+
+}
+
+
+.service-detail-content > p {
+
+    font-size: 13px;
+
+    margin-bottom: 18px;
+
+}
+
+
+.service-detail-content ul {
+
+    list-style: none;
+
+    display: grid;
+
+    gap: 8px;
+
+    margin-bottom: 22px;
+
+}
+
+
+.service-detail-content li {
+
+    font-size: 12px;
+
+    color: var(--dark);
+
+}
+
+
+.service-detail-content li i {
+
+    color: var(--primary);
+
+    margin-right: 8px;
+
+}
+
+
+.service-link {
+
+    color: var(--primary);
+
+    font-size: 12px;
+
+    font-weight: 700;
+
+    display: inline-flex;
+
+    align-items: center;
+
+    gap: 8px;
+
+    transition: var(--transition);
+
+}
+
+
+.service-link:hover {
+
+    gap: 13px;
+
+    color: var(--primary-dark);
+
+}
+
+
+/* =================================
+   PROCESS
+================================= */
+
+.process {
+
+    background: var(--light);
+
+}
+
+
+.process-grid {
+
+    display: grid;
+
+    grid-template-columns:
+        1fr auto 1fr auto 1fr auto 1fr;
+
+    align-items: center;
+
+    gap: 12px;
+
+}
+
+
+.process-step {
+
+    text-align: center;
+
+    position: relative;
+
+}
+
+
+.process-number {
+
+    position: absolute;
+
+    top: -5px;
+
+    right: 10px;
+
+    color: #dfe9df;
+
+    font-size: 35px;
+
+    font-weight: 800;
+
+}
+
+
+.process-icon {
+
+    width: 75px;
+
+    height: 75px;
+
+    display: grid;
+
+    place-items: center;
+
+    background: white;
+
+    color: var(--primary);
+
+    border-radius: 50%;
+
+    font-size: 25px;
+
+    margin: 0 auto 20px;
+
+    box-shadow:
+        0 8px 25px
+        rgba(0,0,0,.05);
+
+    position: relative;
+
+    z-index: 2;
+
+}
+
+
+.process-step h3 {
+
+    color: var(--dark);
+
+    font-size: 16px;
+
+    margin-bottom: 7px;
+
+}
+
+
+.process-step p {
+
+    font-size: 11px;
+
+}
+
+
+.process-line {
+
+    height: 2px;
+
+    width: 45px;
+
+    background: var(--primary-light);
+
+    opacity: .5;
+
+}
+
+
+/* =================================
+   BENEFITS
+================================= */
+
+.service-benefits {
+
+    background: white;
+
+}
+
+
+.benefits-grid {
+
+    display: grid;
+
+    grid-template-columns:
+        1fr 1fr;
+
+    gap: 70px;
+
+    align-items: center;
+
+}
+
+
+.benefits-image {
+
+    position: relative;
+
+}
+
+
+.benefits-image img {
+
+    height: 520px;
+
+    object-fit: cover;
+
+    border-radius: 10px;
+
+}
+
+
+.benefits-badge {
+
+    position: absolute;
+
+    bottom: 25px;
+
+    left: 25px;
+
+    background: white;
+
+    padding: 15px 20px;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 10px;
+
+    border-radius: 7px;
+
+    box-shadow: var(--shadow);
+
+}
+
+
+.benefits-badge i {
+
+    width: 40px;
+
+    height: 40px;
+
+    display: grid;
+
+    place-items: center;
+
+    background: #eaf5ea;
+
+    color: var(--primary);
+
+    border-radius: 50%;
+
+}
+
+
+.benefits-badge span {
+
+    color: var(--dark);
+
+    font-size: 12px;
+
+    font-weight: 600;
+
+}
+
+
+.benefits-content > p {
+
+    font-size: 13px;
+
+    margin-bottom: 25px;
+
+}
+
+
+.benefit-list {
+
+    display: grid;
+
+    gap: 20px;
+
+}
+
+
+.benefit-list > div {
+
+    display: flex;
+
+    gap: 12px;
+
+}
+
+
+.benefit-list > div > i {
+
+    color: var(--primary);
+
+    font-size: 19px;
+
+    margin-top: 2px;
+
+}
+
+
+.benefit-list div div {
+
+    display: flex;
+
+    flex-direction: column;
+
+}
+
+
+.benefit-list strong {
+
+    color: var(--dark);
+
+    font-size: 13px;
+
+}
+
+
+.benefit-list span {
+
+    font-size: 11px;
+
+}
+
+
+/* =================================
+   FAQ
+================================= */
+
+.faq {
+
+    background: var(--light);
+
+}
+
+
+.faq-container {
+
+    max-width: 800px;
+
+    margin: auto;
+
+}
+
+
+.faq-item {
+
+    background: white;
+
+    margin-bottom: 12px;
+
+    border: 1px solid var(--border);
+
+    border-radius: 7px;
+
+    overflow: hidden;
+
+}
+
+
+.faq-question {
+
+    width: 100%;
+
+    padding: 20px;
+
+    border: none;
+
+    background: white;
+
+    color: var(--dark);
+
+    font-family: inherit;
+
+    font-size: 13px;
+
+    font-weight: 600;
+
+    text-align: left;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    cursor: pointer;
+
+}
+
+
+.faq-question i {
+
+    color: var(--primary);
+
+    transition: var(--transition);
+
+}
+
+
+.faq-item.active
+.faq-question i {
+
+    transform: rotate(45deg);
+
+}
+
+
+.faq-answer {
+
+    max-height: 0;
+
+    overflow: hidden;
+
+    transition: max-height .35s ease;
+
+}
+
+
+.faq-answer p {
+
+    padding: 0 20px 20px;
+
+    font-size: 12px;
+
+}
+
+
+/* =================================
+   SERVICES CTA
+================================= */
+
+.services-cta {
+
+    padding: 90px 0;
+
+    background:
+        linear-gradient(
+            100deg,
+            rgba(27,94,32,.95),
+            rgba(46,125,50,.9)
+        ),
+        url("../images/hero.jpg")
+        center/cover;
+
+}
+
+
+.services-cta-content {
+
+    max-width: 800px;
+
+}
+
+
+.services-cta-content > span {
+
+    color: var(--accent);
+
+    text-transform: uppercase;
+
+    font-size: 11px;
+
+    font-weight: 700;
+
+    letter-spacing: 1px;
+
+}
+
+
+.services-cta h2 {
+
+    color: white;
+
+    font-size:
+        clamp(32px, 5vw, 52px);
+
+    line-height: 1.2;
+
+    margin: 10px 0 15px;
+
+}
+
+
+.services-cta h2 strong {
+
+    color: var(--accent);
+
+}
+
+
+.services-cta p {
+
+    max-width: 650px;
+
+    color:
+        rgba(255,255,255,.75);
+
+    font-size: 13px;
+
+    margin-bottom: 28px;
+
+}
+
+
+/* =================================
+   RESPONSIVE
+================================= */
+
+@media (max-width: 1000px) {
+
+    .process-grid {
+
+        grid-template-columns:
+            repeat(2, 1fr);
+
+        gap: 40px;
+
+    }
+
+
+    .process-line {
+
+        display: none;
+
+    }
+
+}
+
+
+@media (max-width: 768px) {
+
+    .service-details-grid {
+
+        grid-template-columns: 1fr;
+
+    }
+
+
+    .benefits-grid {
+
+        grid-template-columns: 1fr;
+
+        gap: 40px;
+
+    }
+
+
+    .benefits-image img {
+
+        height: 420px;
+
+    }
+
+
+    .process-grid {
+
+        grid-template-columns: 1fr 1fr;
+
+    }
+
+}
+
+
+@media (max-width: 500px) {
+
+    .process-grid {
+
+        grid-template-columns: 1fr;
+
+    }
+
+
+    .service-detail-content {
+
+        padding: 25px 20px;
+
+    }
+
+
+    .service-detail-image {
+
+        height: 230px;
+
+    }
+
+
+    .benefits-image img {
+
+        height: 350px;
+
+    }
+
+
+    .benefits-badge {
+
+        left: 15px;
+
+        bottom: 15px;
+
+    }
+
+}

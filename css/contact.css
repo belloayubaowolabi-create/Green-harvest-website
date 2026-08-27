@@ -1,0 +1,816 @@
+/* =====================================
+   CONTACT HERO
+===================================== */
+
+.contact-hero {
+
+    background:
+        url("../images/farming.jpg")
+        center/cover no-repeat;
+
+}
+
+
+/* =====================================
+   CONTACT SECTION
+===================================== */
+
+.contact-section {
+
+    padding-bottom: 100px;
+
+}
+
+
+.contact-grid {
+
+    display: grid;
+
+    grid-template-columns:
+        .85fr 1.15fr;
+
+    gap: 70px;
+
+    align-items: start;
+
+}
+
+
+.contact-intro {
+
+    font-size: 12px;
+
+    line-height: 1.9;
+
+    max-width: 520px;
+
+    margin-bottom: 35px;
+
+}
+
+
+/* =====================================
+   CONTACT CARDS
+===================================== */
+
+.contact-card {
+
+    display: flex;
+
+    align-items: flex-start;
+
+    gap: 15px;
+
+    margin-bottom: 25px;
+
+}
+
+
+.contact-icon {
+
+    width: 48px;
+
+    height: 48px;
+
+    flex-shrink: 0;
+
+    display: grid;
+
+    place-items: center;
+
+    background: #edf6ed;
+
+    color: var(--primary);
+
+    border-radius: 7px;
+
+    font-size: 17px;
+
+}
+
+
+.whatsapp-icon {
+
+    color: #25d366;
+
+}
+
+
+.contact-card h3 {
+
+    color: var(--dark);
+
+    font-size: 13px;
+
+    margin-bottom: 3px;
+
+}
+
+
+.contact-card p {
+
+    font-size: 10px;
+
+    margin-bottom: 5px;
+
+}
+
+
+.contact-card a {
+
+    color: var(--primary);
+
+    font-size: 9px;
+
+    font-weight: 700;
+
+}
+
+
+.contact-card a i {
+
+    margin-left: 4px;
+
+}
+
+
+/* =====================================
+   SOCIAL
+===================================== */
+
+.contact-social {
+
+    margin-top: 35px;
+
+}
+
+
+.contact-social h3 {
+
+    font-size: 12px;
+
+    color: var(--dark);
+
+    margin-bottom: 12px;
+
+}
+
+
+.social-links {
+
+    display: flex;
+
+    gap: 8px;
+
+}
+
+
+.social-links a {
+
+    width: 36px;
+
+    height: 36px;
+
+    display: grid;
+
+    place-items: center;
+
+    border-radius: 50%;
+
+    background: #f1f4f1;
+
+    color: var(--dark);
+
+    transition: var(--transition);
+
+}
+
+
+.social-links a:hover {
+
+    background: var(--primary);
+
+    color: white;
+
+    transform: translateY(-3px);
+
+}
+
+
+/* =====================================
+   FORM
+===================================== */
+
+.contact-form-wrapper {
+
+    background: white;
+
+    border: 1px solid var(--border);
+
+    border-radius: 10px;
+
+    padding: 40px;
+
+    box-shadow:
+        0 10px 40px
+        rgba(0,0,0,.05);
+
+}
+
+
+.form-header {
+
+    margin-bottom: 30px;
+
+}
+
+
+.form-header span {
+
+    color: var(--primary);
+
+    text-transform: uppercase;
+
+    font-size: 9px;
+
+    letter-spacing: 1px;
+
+    font-weight: 700;
+
+}
+
+
+.form-header h2 {
+
+    color: var(--dark);
+
+    font-size: 27px;
+
+    margin: 6px 0;
+
+}
+
+
+.form-header p {
+
+    font-size: 10px;
+
+}
+
+
+/* =====================================
+   FORM ROW
+===================================== */
+
+.form-row {
+
+    display: grid;
+
+    grid-template-columns:
+        1fr 1fr;
+
+    gap: 20px;
+
+}
+
+
+.form-group {
+
+    margin-bottom: 20px;
+
+}
+
+
+.form-group label {
+
+    display: block;
+
+    color: var(--dark);
+
+    font-size: 10px;
+
+    font-weight: 600;
+
+    margin-bottom: 7px;
+
+}
+
+
+.input-box {
+
+    position: relative;
+
+}
+
+
+.input-box > i {
+
+    position: absolute;
+
+    left: 14px;
+
+    top: 50%;
+
+    transform: translateY(-50%);
+
+    color: #999;
+
+    font-size: 12px;
+
+    pointer-events: none;
+
+}
+
+
+.input-box input,
+.input-box select,
+.input-box textarea {
+
+    width: 100%;
+
+    border: 1px solid var(--border);
+
+    border-radius: 5px;
+
+    background: #fafafa;
+
+    color: var(--dark);
+
+    padding: 13px 14px 13px 40px;
+
+    font-family: inherit;
+
+    font-size: 10px;
+
+    outline: none;
+
+    transition: .3s ease;
+
+}
+
+
+.input-box textarea {
+
+    resize: vertical;
+
+    min-height: 130px;
+
+    line-height: 1.7;
+
+}
+
+
+.input-box textarea + i {
+
+    top: 20px;
+
+    transform: none;
+
+}
+
+
+.input-box input:focus,
+.input-box select:focus,
+.input-box textarea:focus {
+
+    border-color: var(--primary);
+
+    background: white;
+
+    box-shadow:
+        0 0 0 3px
+        rgba(46,125,50,.08);
+
+}
+
+
+.error {
+
+    display: block;
+
+    color: #d32f2f;
+
+    font-size: 8px;
+
+    margin-top: 4px;
+
+}
+
+
+/* =====================================
+   SUBMIT BUTTON
+===================================== */
+
+.submit-btn {
+
+    width: 100%;
+
+    border: none;
+
+    cursor: pointer;
+
+    justify-content: center;
+
+}
+
+
+.submit-btn.loading {
+
+    opacity: .7;
+
+    pointer-events: none;
+
+}
+
+
+/* =====================================
+   SUCCESS MESSAGE
+===================================== */
+
+.form-success {
+
+    display: none;
+
+    align-items: flex-start;
+
+    gap: 12px;
+
+    margin-top: 20px;
+
+    padding: 15px;
+
+    background: #edf8ed;
+
+    border: 1px solid #c8e6c9;
+
+    border-radius: 6px;
+
+}
+
+
+.form-success.show {
+
+    display: flex;
+
+}
+
+
+.form-success > i {
+
+    color: var(--primary);
+
+    font-size: 20px;
+
+}
+
+
+.form-success strong {
+
+    display: block;
+
+    color: var(--dark);
+
+    font-size: 11px;
+
+    margin-bottom: 3px;
+
+}
+
+
+.form-success p {
+
+    font-size: 9px;
+
+}
+
+
+/* =====================================
+   BUSINESS HOURS
+===================================== */
+
+.business-hours {
+
+    background: var(--light);
+
+    padding: 100px 0;
+
+}
+
+
+.hours-grid {
+
+    display: grid;
+
+    grid-template-columns:
+        1fr 1fr;
+
+    gap: 70px;
+
+    align-items: center;
+
+}
+
+
+.hours-image img {
+
+    width: 100%;
+
+    height: 450px;
+
+    object-fit: cover;
+
+    border-radius: 8px;
+
+}
+
+
+.hours-content > p {
+
+    font-size: 11px;
+
+    line-height: 1.8;
+
+    max-width: 520px;
+
+}
+
+
+.hours-list {
+
+    margin: 25px 0;
+
+}
+
+
+.hours-list div {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    gap: 20px;
+
+    padding: 14px 0;
+
+    border-bottom: 1px solid var(--border);
+
+}
+
+
+.hours-list span {
+
+    color: var(--dark);
+
+    font-size: 10px;
+
+}
+
+
+.hours-list strong {
+
+    color: var(--primary);
+
+    font-size: 10px;
+
+}
+
+
+.whatsapp-btn {
+
+    display: inline-flex;
+
+    align-items: center;
+
+    gap: 8px;
+
+    background: #25d366;
+
+    color: white;
+
+    padding: 13px 20px;
+
+    border-radius: 5px;
+
+    font-size: 10px;
+
+    font-weight: 700;
+
+    transition: .3s ease;
+
+}
+
+
+.whatsapp-btn:hover {
+
+    background: #128c7e;
+
+    transform: translateY(-2px);
+
+}
+
+
+/* =====================================
+   MAP
+===================================== */
+
+.map-section {
+
+    padding: 100px 0;
+
+}
+
+
+.map-container {
+
+    width: 100%;
+
+    height: 400px;
+
+    overflow: hidden;
+
+    border-radius: 8px;
+
+    border: 1px solid var(--border);
+
+}
+
+
+.map-container iframe {
+
+    width: 100%;
+
+    height: 100%;
+
+    border: 0;
+
+}
+
+
+/* =====================================
+   CONTACT CTA
+===================================== */
+
+.contact-cta {
+
+    padding: 90px 0;
+
+    background:
+
+        linear-gradient(
+            100deg,
+            rgba(27,94,32,.96),
+            rgba(46,125,50,.9)
+        ),
+
+        url("../images/hero.jpg")
+        center/cover;
+
+}
+
+
+.contact-cta-content {
+
+    max-width: 750px;
+
+}
+
+
+.contact-cta-content > span {
+
+    color: var(--accent);
+
+    text-transform: uppercase;
+
+    font-size: 10px;
+
+    font-weight: 700;
+
+    letter-spacing: 1px;
+
+}
+
+
+.contact-cta h2 {
+
+    color: white;
+
+    font-size:
+        clamp(30px, 5vw, 50px);
+
+    line-height: 1.2;
+
+    margin: 10px 0 15px;
+
+}
+
+
+.contact-cta h2 strong {
+
+    color: var(--accent);
+
+}
+
+
+.contact-cta p {
+
+    color: rgba(255,255,255,.75);
+
+    font-size: 12px;
+
+    max-width: 600px;
+
+    margin-bottom: 25px;
+
+}
+
+
+.cta-buttons {
+
+    display: flex;
+
+    gap: 12px;
+
+    flex-wrap: wrap;
+
+}
+
+
+.btn-whatsapp {
+
+    background: #25d366;
+
+    color: white;
+
+}
+
+
+.btn-whatsapp:hover {
+
+    background: #128c7e;
+
+}
+
+
+/* =====================================
+   RESPONSIVE
+===================================== */
+
+@media (max-width: 900px) {
+
+    .contact-grid,
+    .hours-grid {
+
+        grid-template-columns: 1fr;
+
+        gap: 50px;
+
+    }
+
+}
+
+
+@media (max-width: 600px) {
+
+    .contact-form-wrapper {
+
+        padding: 25px 20px;
+
+    }
+
+
+    .form-row {
+
+        grid-template-columns: 1fr;
+
+        gap: 0;
+
+    }
+
+
+    .hours-image img {
+
+        height: 330px;
+
+    }
+
+
+    .hours-list div {
+
+        flex-direction: column;
+
+        align-items: flex-start;
+
+        gap: 5px;
+
+    }
+
+
+    .map-container {
+
+        height: 320px;
+
+    }
+
+}
